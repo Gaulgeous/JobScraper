@@ -6,7 +6,9 @@
 
     ],
     "graphs": {
-        "agent": "./src/graph.py:graph"
+        "cover_letter_agent": "./src/graph.py:graph",
+        "initial_email_agent": "./src/initial_email.py:graph",
+        "submission_email_agent": "./src/submission_email.py:graph"
     },
     "env": "./.env"
 }

@@ -1,27 +1,16 @@
-import operator
 from dotenv import load_dotenv
-from langchain_core.vectorstores import InMemoryVectorStore
 from langgraph.graph import MessagesState
 from langchain.chat_models import init_chat_model
-from langchain_core.messages import SystemMessage, HumanMessage, RemoveMessage, BaseMessage
-from langgraph.graph.message import add_messages
-import os
-from pydantic import BaseModel, Field
-from typing import List, Literal, TypedDict, Annotated
+from typing import List, TypedDict
 from langchain.agents import create_agent
 
 from langgraph.graph import StateGraph, START, END
-from langgraph.prebuilt import ToolNode, tools_condition
-from langgraph.checkpoint.memory import InMemorySaver
-from langchain.tools import tool
 from langsmith import Client
-from setuptools import Command
-
 import json
 
 from writing_examples import intro_writing_example, technical_writing_example, soft_skills_writing_example, conclusion_writing_example
 
-load_dotenv("/home/david/Git/JobScraper/backend/.env")
+load_dotenv("/home/david/Git/JobScraper/.env")
 
 file_path = '/home/david/Git/JobScraper/backend/src/resume.txt'  # Replace with the actual path to your .txt file
 resume = ""

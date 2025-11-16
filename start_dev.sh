@@ -15,8 +15,6 @@ cd "$PROJECT_DIR" || { echo "Error: Project directory not found at $PROJECT_DIR"
 # ---
 # 2. Spawn the Backend Process
 # ---
-echo "--- STARTING BACKEND ---"; 
-cd backend; 
 echo "Activating venv..."; 
 source .venv/bin/activate; 
 echo "Syncing dependencies with uv..."; 
