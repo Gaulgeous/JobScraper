@@ -8,7 +8,7 @@ from langgraph.graph import StateGraph, START, END
 from langsmith import Client
 import json
 
-from writing_examples import intro_writing_example, technical_writing_example, soft_skills_writing_example, conclusion_writing_example
+from src.writing_examples import intro_writing_example, technical_writing_example, soft_skills_writing_example, conclusion_writing_example
 
 load_dotenv("/home/david/Git/JobScraper/.env")
 
